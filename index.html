@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St. Jude Secondary School</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #003366;
+      color: white;
+      padding: 20px 30px;
+    }
+
+    .logo {
+      display:flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .logo h1 {
+      font-size: 1.2em;
+    }
+
+    .nav-links {
+      list-style: none;
+      display:flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color:white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+
+    .hero-text {
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    .hero-text h2 {
+      font-size: 2.5em;
+    }
+
+    .hero-text p {
+      font: size 1.3em;
+      margin-top: 10px;
+    }
+
+    /* Gallery */
+    .gallery {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      margin-bottom: 20px;
+      color: #003366;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .gallery-item p {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+
+    /* Messages */
+    .messages {
+      background-color: #18b7cc;
+      padding: 40px 20px;
+    }
+
+    .messages h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #003366;
+    }
+
+    .message {
+      background: rgb(219, 225, 226);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+
+    .message h3 {
+      color: #661d00;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="St. Jude Logo" />
+        <h1 style="font-size: x-large;">St. Jude Secondary School</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="home.jpg" alt="Welcome" class="hero-image" />
+    <div class="hero-text">
+      <h2>Welcome to St. Jude Secondary School our home away from home</h2>
+      <p>Education is Wealth</p>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <h2>School Activities</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="sports.jpg" alt="Sports Day" />
+        <p>Sports team.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="LAB .jpg" alt="Science Fair" />
+        <p>Students in the science labaratory</p>
+      </div>
+      <div class="gallery-item">
+        <img src="candidates.jpg" alt="Cultural Event" />
+        <p>Students with the director.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="computer lab.jpg" alt="Library" />
+        <p>Students in the computer labaratory</p>
+        <p>.</p>
+      </div>
+    </div>
+  </section>
+  <a href="https://lubiriss.sc.ug">For insipiration visit www.lubiri.sss</a>
+  <!-- Messages -->
+  <section class="messages">
+    <h2>Messages from Administration</h2>
+    <div class="message">
+      <h3>Head Teacher’s Message</h3>
+      <img src="HM.png" alt="HM's image">
+      <p><strong> We are delighted to welcome all students, parents, and staff to our learning community.</strong></p>
+      <p><strong>Message:</strong> At St. Jude Secondary School, we believe that education is the key to a brighter future. Our goal is to nurture discipline, academic excellence, and character among all our students.</p>
+      <p><em>- Head Teacher</em></p>
+    </div>
+    <div class="message">
+      <h3>Deputy Head Teacher’s Message</h3>
+      <img src="deputy.png" alt="Hms image" width="100"height="100"
+      <p><strong> Together, we strive to uphold the values and vision of our institution.</strong></p>
+      <p><strong>Message:</strong> Our team is dedicated to providing a supportive environment where every student can achieve their full potential both academically and socially.</p>
+      <p><em>- Deputy Head Teacher</em></p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 St. Jude Secondary School | Motto: Education is Wealth</p>
+  </footer>
+
+  <script>
+    // Toggle menu for small screens
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+  </script>
+</body>
+</html>
