@@ -13,34 +13,59 @@
       margin: 0;
       padding: 0;
     }
-
-    header {
-      background-color: #502eeb;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    header img {
-      height: 80px;
-    }
-
-    nav {
-      background-color: #210e8f;
+    .navbar {
       display: flex;
-      justify-content: center;
-      padding: 10px;
-      font-weight: bold;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #003366;
+      color: white;
+      padding: 20px 30px;
     }
 
-    nav a {
+    .logo {
+      display:flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .logo h1 {
+      font-size: 1.2em;
+    }
+
+    .nav-links {
+      list-style: none;
+      display:flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color:white;
       text-decoration: none;
-      color: rgb(228, 219, 219);
-      margin: 10px 20px;
+      font-weight: 600;
+      transition: 0.3s;
     }
 
-    nav a:hover {
-      color: #0073aa;
+    .nav-links a:hover {
+      text-decoration: underline;
     }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+
+    
 
     h1 {
       text-align: center;
@@ -103,16 +128,21 @@
 
 <body>
 
+  <!-- Navbar -->
   <header>
-    <img src="logo.png" alt="St Jude Logo"><br>
-    <h1>EDUCATION IS WEALTH</h1>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="St. Jude Logo" />
+        <h1 style="font-size: x-large;">St. Jude Secondary School</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
   </header>
-
-  <nav>
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="CONTACT.html">CONTACT</a>
-  </nav>
 
   <section class="section">
     <h2>ABOUT US</h2>
@@ -162,6 +192,7 @@
 
 </body>
 </html>
+
 
 
 
